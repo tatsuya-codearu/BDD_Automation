@@ -8,17 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b59db5a-1cdd-4f7f-819b-720fc623102c" name="Changes" comment="3rd commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ObjectRepository/homePageRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/productComparison.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/homePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/resources/extent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/productComparisonSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/excelData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ObjectRepository/homePageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ObjectRepository/homePageRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/productComparison.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/productComparison.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/homePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/homePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinition/productComparisonSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinition/productComparisonSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testRunner/lumaAutomation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testRunner/lumaAutomation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Luma Test Case.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Luma Test Case.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/actionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/actionHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
@@ -65,9 +64,62 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/Users/gvila/Downloads/LumaAutomationBDD-main",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.editor"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.lumaAutomation">
+    <configuration name="C:/Users/gvila/OneDrive/Desktop/Practice examples/BDD Automation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BDD_Automation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lumaAutomation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BDD_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testRunner" />
+      <option name="MAIN_CLASS_NAME" value="testRunner.lumaAutomation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lumaAutomation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BDD_Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testRunner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testRunner" />
+      <option name="MAIN_CLASS_NAME" value="testRunner.lumaAutomation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.lumaAutomation" />
+        <item itemvalue="TestNG.lumaAutomation (1)" />
+        <item itemvalue="TestNG.C:/Users/gvila/OneDrive/Desktop/Practice examples/BDD Automation/testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

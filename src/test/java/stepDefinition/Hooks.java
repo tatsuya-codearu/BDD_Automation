@@ -4,32 +4,31 @@ import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import jdk.vm.ci.meta.Local;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Parameters;
 import utilities.actionHelper;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-import static org.apache.commons.exec.util.DebugUtils.handleException;
+import utilities.excelData;
 
 public class Hooks extends actionHelper {
     public static WebDriver driver;
     public static Scenario scenario;
+    public static String url;
+    public static String browser;
 
     @Before
-    @Parameters({"url","browser"})
-    public void setUp(Scenario scenario, String url, String browser){
-        Hooks.scenario = scenario;
+    @Parameters({"url", "browser"})
+    public void before(){
+        Hooks.url = url;
+        Hooks.browser = browser;
         driver = setUpBrowser(browser);
-        //driver.get(url);
+        System.setProperty("com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:output-folder", "src/test/java/Reporting");
     }
 
     @After
-    public void closeBrowser(){
+    public void tearDown(){
+        excelData xl = new excelData();
         driver.quit();
     }
 
@@ -43,6 +42,8 @@ public class Hooks extends actionHelper {
         }
 
     }
+
+
 
 
 }

@@ -15,4 +15,8 @@ public class homePageRepo {
         return By.linkText("comparison list");
     }
 
+    public By addComparisonBtn(){
+        return By.className("action tocompare");
+    }
+
 }

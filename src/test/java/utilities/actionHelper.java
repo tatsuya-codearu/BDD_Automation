@@ -1,5 +1,7 @@
 package utilities;
 
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;
@@ -21,37 +23,38 @@ import static org.apache.commons.exec.util.DebugUtils.handleException;
 import static stepDefinition.Hooks.driver;
 
 public class actionHelper {
+    static ExtentTest test;
+    @Parameters("browser")
     public String getBrowserName(){
         String browser = "firefox";
         return browser;
     }
 
-    @Parameters("browser")
+
     public WebDriver setUpBrowser(String browser){
         WebDriver driver;
-        try{
-            switch(getBrowserName().toLowerCase()){
-                case "chrome":{
+        browser = getBrowserName();
+        try {
+            switch (browser) {
+                case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-                }
-                case "firefox":{
+                    break;
+                case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-                }
+                    break;
                 default:
-                    throw new RuntimeException("Unexpected value: " + getBrowserName().toLowerCase());
+                    throw new RuntimeException("Unexpected value: " + browser);
             }
 
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+            return driver;
 
-        }catch (Exception exception){
-            throw new RuntimeException("unable to setup" + browser + "Web Driver", exception);
+        } catch (Exception exception) {
+            throw new RuntimeException("Unable to setup " + browser + " Web Driver", exception);
         }
-
     }
 
     public void scrollTo(int x, int y) {
@@ -100,6 +103,10 @@ public class actionHelper {
         }catch (Exception e){
             handleException("Unable to take screenshot",e);
         }
+    }
+
+    public void log(String desc){
+        test.log(Status.INFO,desc);
     }
 
 }

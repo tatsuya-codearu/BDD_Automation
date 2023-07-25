@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import stepDefinition.Hooks;
 import utilities.actionHelper;
 
-import static java.lang.ApplicationShutdownHooks.hooks;
 
 public class homePage extends actionHelper {
 
